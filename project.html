@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+<head>
+  <style>
+  h1{
+    margin-top: 50px;
+  }
+  div.mainpage{
+    text-align: right;
+  }
+  div.buttons{
+    text-align: center;
+  }
+  .main{
+    font-size: 20px;
+  }
+  #ingredient{
+    margin-top: 200px;
+  }
+  </style>
+  <title>Recipe Generation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div>
+    <div class="mainpage" id="signs">
+      <a href="signup.html"><button type="button">Sign up</button></a>
+      <a href="login.html"><button type="button">Log in</button></a>
+    </div>
+    <div>
+      <h1><center>Recipe Generation</center><h1>
+    </div>
+    <div class="buttons" id="ingredient">
+      <a href="ingredient.html"><button class="main" type="button">Find Recipe</button></a>
+    </div>
+    <div class="buttons" id="favorites">
+    <button class="main" type="button" onclick="alert('Please Log In before you check the favorite.')">Favorite</button>
+    </div>
+  </div>
+</body>
+</html>
