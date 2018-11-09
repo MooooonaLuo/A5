@@ -4,16 +4,14 @@
 <head>
 	<title></title>
 	<style type="text/css">
-  .account{
-      width: 1000px;
-      height: 150px;
-      /*background: red;*/
-      margin:30px auto;
-    }
-    .account img{
-      float: right;
-      margin-right: 20px;
-    }
+  .login{
+    text-align: right;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  .login button{
+    font-size: 30px;
+  }
   * {
       box-sizing: border-box;
   }
@@ -125,11 +123,10 @@
 	</style>
 </head>
 <body> 
-<div id="result"></div>
-
-  <div class="account">
-			<a href="account.html"><img src="image/account.png" width="15%"></a>
-	</div>
+  <div class="login">
+      <a href="signup.html"><button type="button">Sign up</button></a>&nbsp;
+      <a href="login.html"><button type="button">Log in</button></a>
+  </div>
   <div id="myDIV" class="header">
     <h1>Ingredients I Have</h1>
       <input type="text" id="myInput" placeholder="e.g. Tomato" value="">
@@ -197,12 +194,12 @@
   </script>
   <div class="nav">
   		<div class="back">
-  			<a href="home.html">
+  			<a href="project.html">
   				<p>Back</p>
   			</a>
   		</div>
   		<div class="next">
-  			<a href="tools.html">
+  			<a href="toolsB.html">
   				<p>Next</p>
   			</a>
   		</div>

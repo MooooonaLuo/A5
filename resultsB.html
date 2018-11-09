@@ -15,15 +15,13 @@
         height: 50px;
         float: left;
       }
-    .account{
-      width: 1000px;
-      height: 150px;
-      /*background: red;*/
-      margin:30px auto;
+    .login{
+        text-align: right;
+        margin-bottom: 80px;
+        margin-top: 30px;
       }
-    .account img{
-        float: right;
-        margin-right: 20px;
+    .login button{
+        font-size: 30px;
       }
     .nav{
       height: 130px;
@@ -77,26 +75,26 @@
     </style>
   </head>
   <body>
-    <div class="account">
-        <a href="account.html"><img src="image/account.png" width="15%"></a>
+   <div class="login">
+      <a href="signup.html"><button type="button">Sign up</button></a>&nbsp;
+      <a href="login.html"><button type="button">Log in</button></a>
     </div>
     <h1><center>Your Results</center></h1>
     <div class="content">
       <ul>
-        <li><a href="recipe.html"><p>Recipe1</p><p id="result"></p></a></li>
-        <!-- <li><a href="recipe.html"><p>Recipe2</p></a></li>
-        <li><a href="recipe.html"><p>Recipe3</p></a></li> -->
+        <li><a href="recipeB.html"><p>Recipe1</p><p id="result"></p></a></li>
+        <!-- <li><a href="recipeB.html"><p>Recipe2</p></a></li>
+        <li><a href="recipeB.html"><p>Recipe3</p></a></li> -->
       </ul>
     </div>
 
     <script type="text/javascript">
   document.getElementById("result").innerHTML = localStorage.getItem("in1")+"+"+localStorage.getItem("in2")+"+"+localStorage.getItem("in3");
-
   </script>
 
     <div class="nav">
       <div class="back">
-        <a href="tools.html">
+        <a href="toolsB.html">
           <p>Back</p>
         </a>
       </div>  
