@@ -13,27 +13,42 @@
       font-size: 50px;
       margin-top: 100px;
     }
-    input .name{
-      font-size: 50px;
+   p{
+      font-size: 30px;
+      font-family: arial;
     }
     input[type=text]{
       font-size: 50px;
+      border: 2px solid #ccc;
     }
     button{
       font-size: 40px;
+    }
+    .login{
+      margin-top: 80px;
+    }
+    a{
+      text-decoration: none;
+      color: black;
     }
   </style>
 </head>
 <body>
   <h1>Log in</h1>
   <form>
-    Username:<br>
-    <input type="text" name="Username" value="">
+   <br>
+    <p>Username</p>
+    <input type="text" value="">
     <br>
-    Password:<br>
-    <input type="text" name="Password" value="">
+    <p> Password:</p>
+    <input type="text" value="">
     <br>
+  
+  <div class="login">
+    <a href="signup.html"><p>Sign up to create a new acount</p></a>
     <a href="home.html"><button type="button">login</button></a>
+  </div>
   </form>
+ 
 </body>
 </html>
