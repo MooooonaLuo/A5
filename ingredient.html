@@ -125,18 +125,20 @@
 	</style>
 </head>
 <body> 
+<div id="result"></div>
+
   <div class="account">
 			<a href="account.html"><img src="image/account.png" width="15%"></a>
 	</div>
   <div id="myDIV" class="header">
     <h1>Ingredients I Have</h1>
-    <input type="text" id="myInput" placeholder="e.g. Tomato">
-    <span onclick="newElement()" class="addBtn">Add</span>
+      <input type="text" id="myInput" placeholder="e.g. Tomato" value="df">
+      <span onclick="newElement()" class="addBtn">Add</span>
   </div>
 
   <ul id="myUL">
     <li>Tomato</li>
-    <li >Beef</li>
+    <li>Beef</li>
     <li>Egg</li>
     <li>Spaghetti</li>
 
@@ -200,5 +202,10 @@
   			</a>
   		</div>
   	</div>
+
+    <script>
+      var myCollection = document.getElementsByTagName("li");
+      localStorage.lastname = myCollection[1].innerHTML.replace("\u00D7","");
+    </script>
   </body>
 </html>

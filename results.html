@@ -83,11 +83,16 @@
     <h1><center>Your Results</center></h1>
     <div class="content">
       <ul>
-        <li><a href="recipe.html"><p>Recipe1</p></a></li>
+        <li><a href="recipe.html"><p>Recipe1</p><p id="result"></p></a></li>
         <li><a href="recipe.html"><p>Recipe2</p></a></li>
         <li><a href="recipe.html"><p>Recipe3</p></a></li>
       </ul>
     </div>
+
+    <script type="text/javascript">
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+  </script>
+
     <div class="nav">
       <div class="back">
         <a href="tools.html">
@@ -95,5 +100,6 @@
         </a>
       </div>  
     </div>
+    <div id="data"></div>
   </body>
 </html>
