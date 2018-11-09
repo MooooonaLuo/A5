@@ -10,3 +10,36 @@ var data = [
   {"title" : "Braised Balsamic Chicken", "ingredient" : ["chicken breast halves", "garlic salt", "ground black pepper", "olive oil", "onion", "tomato", "balsamic vinegar", "basil", "oregano", "rosemary", "thyme"], "directions" : ["Season both sides of chicken breasts with garlic salt and pepper.", "Heat olive oil in a skillet over medium heat; cook seasoned chicken breasts until chicken is browned, 3 to 4 minutes per side. Add onion; cook and stir until onion is browned, 3 to 4 minutes.", "Pour diced tomatoes and balsamic vinegar over chicken; season with basil, oregano, rosemary and thyme. Simmer until chicken is no longer pink and the juices run clear, about 15 minutes. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C)."], "nutrition" : "Per Serving: 196 calories; 7 g fat; 7.6 g carbohydrates; 23.8 g protein; 61 mg cholesterol; 511 mg sodium."},
   {"title" : "Fluffy French Toast", "ingredient" : ["all-purpose flour", "milk", "salt", "egg", "ground cinamon", "vanilla extract", "white sugar", "bread"], "directions" : ["Measure flour into a large mixing bowl. Slowly whisk in the milk. Whisk in the salt, eggs, cinnamon, vanilla extract and sugar until smooth.", "Heat a lightly oiled griddle or frying pan over medium heat.", "Soak bread slices in mixture until saturated. Cook bread on each side until golden brown. Serve hot."], "nutrition" : "Per Serving: 123 calories; 2.7 g fat; 19.4 g carbohydrates; 4.8 g protein; 48 mg cholesterol; 230 mg sodium."}
 ]
+
+function searching(input){
+  var result = new Array();
+  for (var x = 0; x < input.length; x++){
+    for (var y = 0; y < data.length; y++){
+      for (var z = 0; z < data[y].ingredient.length; z++)
+      {
+        if(input[x] === data[y].ingredient[z]) {
+          result.push(data[j].title);
+        }
+      }
+    }
+  }
+  return result;
+}
+
+function output_recipe(input)
+{
+  for (var i = 0; i < input.length; i++)
+  {
+    for (var j = 0; j < data.length; j++)
+    {
+      if (input[i] === data[y].title) {
+        var output = data[y];
+        obj = JSON.parse(output);
+        console.log(obj.title);
+        console.log(obj.ingredient);
+        console.log(obj.directions);
+        console.log(obj.nutrition);
+      }
+    }
+  }
+}
